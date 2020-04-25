@@ -1,0 +1,81 @@
+.construction-container {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .App-logo {
+      font-family: var(--font-deco);
+      color: var(--color-main);
+      font-size: 6em;
+      align-items: center;
+      opacity: 0;
+      margin-top: 20px;
+    }
+
+    .insta-icon {
+      width: 5em;
+      position: relative;
+      bottom: 40px;
+      opacity: 0;
+    }
+
+    .name {
+      text-transform: uppercase;
+      font-family: var(--font-base);
+      position: relative;
+      top: -20px;
+      left: 15px;
+      letter-spacing: 3px;
+      color: #c8c8c8;
+      opacity: 0;
+      margin: 0;
+
+    }
+
+    #logo-animation {
+      text-align: center;
+      animation: fadein 3s 2s forwards;
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .construction-txt {
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    opacity: 0;
+    color: #F9796E;
+    font-weight: bold;
+  }
+
+  #construction-txt-animation {
+    font-size: 1.5em;
+    text-align: center;
+    animation: fadein 2s 4s forwards;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.8;
+    }
+  }
+
+}
